@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="stylesheet" href="../css/common.css">
+<!-- <script src="../js/jquery-1.11.2.js" type="text/javascript"></script> -->
+<script type="text/javascript" src="../js/jquery.validate.js"></script>  
+<script type="text/javascript" src="../js/additional-methods.js"></script> 
+  <script src="../js/validation.js"></script> 
+  <script src="../js/moment.js"></script> 
+ 
+  
+
+<title>Therapist Management System</title>
+</head>
+<body>
+
+<form id='jasper' action="">
+
+<fieldset id ='successmessage'></fieldset>
+	  <fieldset id ='errormessage'></fieldset>
+	  <div id='generate'>
+<fieldset>
+		<legend>Reports</legend>
+			<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Reports For:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							 <select id='repFor' name='repFor'>
+									<option value="">Reports For</option>
+									<option value="rbi">Bill-Insurance</option>
+									<option value="rbs">Bill-Summary </option>
+									<option value="rt">Totals</option>
+									<option value="rcl">Client List</option>
+									<option value="rtm">Therapist Money</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				
+					<div class='halfFrame'>
+						<div>
+						<div class='oneThirdFrame'>
+							<label>Therapist:</label>
+
+						</div>
+						<div class='twoThirdFrame'>
+							
+							 	<select id='therapistName' name='therapistName'>
+									<option value=''>Select Therapist</option>
+									
+								</select>
+						</div>
+						
+					</div>
+					</div>
+				
+					<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Flag:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							
+								<select id='selectFlag' name='selectFlag'>
+									<option value=''>Select Flag</option>									
+								</select>
+						</div>
+					</div>
+					</div>
+					
+					<div class='halfFrame'>
+						<div>
+							<div class='oneThirdFrame'>
+								Date From:
+							</div>
+							<div class='twoThirdFrame'>
+								<input type="date" name='fromdate' id='fromdate'/>
+							</div>	
+							
+						</div>
+					</div>
+					
+				
+					
+					
+				
+					<div class="halfFrame">
+						<div>
+						<div class='oneThirdFrame'>
+								<label>For Clients:</label>
+							</div>	
+							<div class='twoThirdFrame'>	
+							<div class='styled-list'>
+								<select id='selectClient' name='selectClient' size=4>
+																
+								</select>
+							
+						</div>
+						</div>		
+							
+						</div>
+					</div>
+					
+				
+				
+					
+					
+					<div class='halfFrame'>
+						<div>
+							<div class='oneThirdFrame'>
+								To:
+							</div>
+							<div class='twoThirdFrame'>
+								<input type="date" name='todate' id='todate'/>
+							</div>	
+							
+						</div>
+					</div>
+					
+				
+				
+					
+					<div class="halfFrame">
+					<div class='oneThirdFrame'></div>
+				
+					<div class="oneThirdFrame">
+				 		<input type="submit" id="but" name="btnGen" value="Generate" class='btnGen'/>
+				 		
+				 	</div>
+				</div>
+				
+				
+				
+				
+				
+	</fieldset>
+	</div>
+	
+	<div class='fullReportFrame'>
+
+			<div id='therapistdetail'></div>
+			<div id='divleft'></div>
+			<div id='divright'></div>
+			<div id='divclient'></div>
+			<div id='clientdiagnosiscd'></div>
+			<div id='reportBI'>
+			<div id='reportGenSummary'>
+			
+				
+			</div>
+			<hr>
+			<div id='reportGenRow'>
+				<div id='reportGenList'></div>
+			</div>
+		</div>
+			<div id='reportTotalIns'>
+			</div>
+</div>
+<div class='halfFrame'>
+</div>
+<div class='halfFrame'>
+<div id='BIprint' class='oneThirdFrame'>
+<input type='button' id='but'  class='btnPrint' name="btnPrint" value='Print'>
+</div></div>
+</form>
+	
+	
+	
+
+</body>
+</html>

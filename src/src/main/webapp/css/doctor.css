@@ -1,0 +1,33 @@
+
+.teraid{
+	display: inline;
+	padding: 0px;
+	width: 18%;
+	float: right;
+	margin-right: 120px;	
+	position: relative;	
+}
+.checkbox{
+	margin-right:10px;
+	float:left;
+}
+.ind{
+	display: inline;
+	float: right;
+	padding: 0px;
+	width:25%;	
+	margin-right:100px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.flagtxtbox{
+	border: 1px solid gray;
+    font-size: 1.1em;
+    width: 15%;
+    padding: 5px;
+    position:relative;             
+}
+.flagButton{
+	height: 55%;
+	width: 2%;
+}

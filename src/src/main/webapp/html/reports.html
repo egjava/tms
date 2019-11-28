@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../css/common.css">
+<script src="../js/jquery-1.11.2.js" type="text/javascript"></script>
+
+
+
+ <title>Therapist Management System</title>
+</head>
+<body>
+<div class="formFrame">
+		<form action="" method=get>
+			<div class='header'>Reports</div>
+			
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Client:</label>
+						</div>
+						<div class='oneThirdFrame'>
+						<!--<input class="txtbox" type="text" id="dV" name="dV"
+								placeholder="diagnosis V" required maxlength="10" />-->
+							  <select>
+									<option>Select Report</option>
+									<option>Bill-Insurance</option>
+									<option>Bill-Summary </option>
+									<option>Report-Client List</option>
+									<option>Report-Therapist Money</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Search:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input class="txtbox" type="text" id="search" name="search"
+								placeholder="search" required maxlength="10" />
+						</div>
+					</div>
+				</div>
+				<div class='fullFrame'>
+					<div>
+						
+						<div class='oneThirdFrame'>
+							<label>Report For:</label>
+							<!--  <select id ='report'>
+								<option>Yealry</option>
+								<option>Monthly</option>								
+							</select>-->
+						</div>
+						<div class='oneThirdFrame'>
+							<select id ='report'>
+								<option>Month</option>
+								<option>May</option>								
+							</select>
+						</div>
+						<div class='oneThirdFrame'>
+							<select id ='report'>
+								<option>Year</option>
+								<option>2015</option>								
+							</select>
+						</div>	
+						
+					</div>
+				</div>
+				<div class='oneThirdFrame'>
+							<input type=radio name="charge" value="Charge"  />
+							<label>Charge</label>
+							
+							<input type=radio name="copay" value="Copay"  />
+							<label>Copay</label>
+							
+							<input type=radio name="paid" value="Paid"  />
+							<label>Paid</label>
+							
+							<input type=radio name="total" value="Total" checked="checked" />
+							<label>Total</label>
+				</div>
+				
+				<div class='formFrame'>
+				<fieldset id="reportheader">
+				
+					<div class='reportFrame1'>
+						<label>Days</label>
+					</div>
+					<div class='reportFrame1'>
+						<label>Type</label>
+					</div>
+					<div class='reportFrame2'>
+						<label>Net.chg</label>
+					</div>
+					<div class='reportFrame2'>
+						<label>Cl.paid</label>
+					</div>
+					<div class='reportFrame2'>
+						<label>Ins.paid</label>
+					</div>
+					<div class='reportFrame2'>
+						<label>Due</label>
+					</div>
+					<br>
+				
+				</fieldset>
+				<fieldset id="report"></fieldset>
+				<fieldset id="reportbottom">
+				<div class='reportFrame1'>
+						<label></label>
+					</div>
+					<div class='reportFrame1'>
+						<label></label>
+					</div>
+					<div class='reportFrame2'>
+						<label>Total</label>
+					</div>
+				</fieldset>
+				
+				</div>
+				
+		</form>
+</div>
+</body>
+</html>

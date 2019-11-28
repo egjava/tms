@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../css/common.css">
+<script src="../js/validation.js" type="text/javascript"></script>
+<!--  <script src="../js/dynamic.js" type="text/javascript"></script>-->
+<title>Insert title here</title>
+</head>
+<body>
+<div class="formFrame">
+		<form id="doctorrate" action="" >
+			 
+			<div class='header'></div>
+			 <fieldset id ='successmessage'></fieldset>
+			<fieldset id ='errormessage'></fieldset>
+			<fieldset>
+				<legend>Rate Schedule</legend>
+				
+				<div class='classGroup'>
+					<div class='halfFrame'>
+						<div>
+							<div class='oneThirdFrame'>
+								<label>Class #1 :</label>
+							</div>
+							<div class='twoThirdFrame'>
+								<select class='activity1' id='acttypeid[]' name='acttypeid[]' >
+									<option value=''>Select ActivityType</option>									
+								</select>
+							</div>
+						</div>
+						</div>
+						<div class='halfFrame'>
+						<div>
+							<div class='twoThirdFrame'>
+								<select id="report" name="selectrate[]">
+									<option value=''>Rate per</option>
+									<option value='Hour'>Hour</option>
+									<option value='Activity'>Activity </option>
+									<option value='Months'>Months</option>
+									<option value='% per year'>% per year</option>
+								</select>
+								<label>Unit:</label>
+								<input class="smallTxtbox" type="text" id="valrateper[]" name="valrateper[]"
+									 maxlength="3"/>	
+							</div>
+							<div class='oneThirdFrame'>
+								<label>$</label><input class="rateTxtbox" type="text" id="docamt[]" name="docamt[]"
+									placeholder="rate $" required maxlength="50" />							
+							</div>
+								
+							
+						</div>
+						
+					</div>
+				</div>
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+						</div>
+						<div class='oneThirdFrame'>
+						</div>
+						<div class='oneThirdFrame'>
+						</div>
+					
+					</div>
+				</div>
+				<div class="halfFrame">
+					<div>
+						
+						<div class='oneThirdFrame'>
+							<input type='button' id='but' value='Add Class' name='moreClass' class='addNew'>
+						</div>
+						<div class='oneThirdFrame'>
+							<input type='button' id='but' value='Remove Class' name='removeClass' class='removeButton'>
+						</div>
+						<div class='oneThirdFrame'>
+							<input type='submit' id='but' value='Save' name='btnSave' class='btnSave'>
+							<!-- <div id='successmessage'>	</div> -->
+						</div>
+					</div>				
+				</div>
+				
+					
+			</fieldset>
+			<!-- <div class='bottomFrame'><label><center> For a new rate, enter the $ amount [$ per hour, month or activity].</center></label></div> -->
+		</form>
+</div>
+
+</body>
+</html>

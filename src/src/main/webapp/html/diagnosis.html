@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../css/common.css">
+
+<script type="text/javascript" src="../js/jquery.validate.js"></script>  
+<script type="text/javascript" src="../js/additional-methods.js"></script> 
+
+ <title>Therapist Management System</title>
+</head>
+<body>
+<form id="searchdiagnosiscode" action="">
+	  <fieldset id ='successmessage'></fieldset>
+			<fieldset id ='errormessage'></fieldset>
+<fieldset>
+				<legend>Search</legend>
+				<div class='twothirdFrame'>
+					<div>
+						 <div class='oneFourthFrame'>
+							<label>Diagnosis Code:</label>
+						</div>
+						<div class='oneThirdFrame'>
+							<input class="searchtxtbox" type="text" id="searchdiagcode" name="searchdiagcode"
+								placeholder="diagnosis code"  maxlength="50" />
+							<!-- 	<div id='searchmessage'></div> -->
+						</div>
+						<div class='oneFourthFrame'>
+							<input type="submit" id="but" name="search" value="Search" class='btnSearch'/>
+						</div>
+						<div class='oneFourthFrame'>
+							<input type="submit" id="but" name="delete" value="Delete" class='btnDelete'/>
+						</div>
+					</div>
+				</div>
+				<div class="halfFrame">
+					<div>
+					<div class="oneThirdFrame">
+					
+					</div>
+						<div class="twoThirdFrame">
+							<ul id="searchDiagnosisCodeList"></ul>
+						</div>
+					</div>
+				</div>
+				</fieldset>
+				</form>
+				<br>
+<form id='diagnosiscode' action="">
+	<fieldset>
+	<legend>Diagnosis Code</legend>
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Name:</label>
+						</div>
+						<div class='twoThirdFrame'>
+								<input class="txtbox" type="text" id="dcode" name="dcode"
+								placeholder="diagnosis code"  maxlength="50" />
+						</div>
+					</div>
+				</div>
+			
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Description:</label>
+						</div>
+						<div class='twoThirdFrame'>
+								<input class="desctxtbox" type="text" id="desc" name="desc"
+								placeholder="description"  maxlength="50" />
+						</div>
+					</div>
+				</div>
+				<div class='halfFrame'>
+					<!-- <div>
+						<div class='oneThirdFrame'>
+							<label>Description:</label>
+						</div>
+						<div class='twoThirdFrame'>
+								<input class="desctxtbox" type="text" id="desc" name="desc"
+								placeholder="description"  maxlength="50" />
+						</div>
+					</div> -->
+				</div>
+				<div class='twoThirdFrame'></div>
+				
+					<div class='twoThirdFrame'>
+					<div>
+						<div class='oneFourthFrame'>
+						</div>
+						<div class='oneFourthFrame'></div>
+						<div class='oneFourthFrame'>
+							<input type="submit" id="but" name="save" value="Save" class='btnSave'/>
+						</div>
+						<!-- <div class='oneFourthFrame'>
+							<input type="submit" id="but" name="delete" value="Delete" class='btnDelete'/>
+						</div> -->
+						
+						<div class='oneFourthFrame'>
+						<!-- <div id='successmessage'></div> -->
+						</div>
+						
+						
+					</div>
+				</div>
+				
+</fieldset>
+</form>
+
+</body>
+</html>

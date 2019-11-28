@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../css/common.css">
+<!-- <script src="../js/jquery-1.11.2.js" type="text/javascript"></script> -->
+<script type="text/javascript" src="../js/jquery.validate.js"></script>  
+<script type="text/javascript" src="../js/additional-methods.js"></script> 
+ <!--  <script src="../js/validation.js"></script>-->
+ <title>Therapist Management System</title>
+</head>
+<body>
+<form id='searchTherapist'>
+	 
+<div id='tsearch'>
+ <fieldset id ='successmessage'></fieldset>
+			<fieldset id ='errormessage'></fieldset>
+		<fieldset>
+				<legend>Search Therapist</legend>
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>First Name:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input class="txtbox" type="text" id="tsearchfirstname" name="tsearchfirstname"
+								placeholder="firstname"  maxlength="50" />
+						</div>
+					</div>
+					</div>
+					<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Last Name:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input class="txtbox" type="text" id="tsearchlastname" name="tsearchlastname"
+								placeholder="lastname"  maxlength="50" />
+						</div>
+					</div>
+					</div>
+					<div class='halfFrame'>
+						<div class='oneThirdFrame'></div>
+					
+					</div>
+					<div class='halfFrame'>
+							<div class='oneThirdFrame'></div>
+							
+							
+						<div class='oneThirdFrame'>
+								<input type="submit" id="but" name="search" value="Search" class='btnSearch'/>
+						</div>
+					</div>
+</fieldset>
+<fieldset id='searchdoc'>
+<legend>Therapist List</legend>
+<ul id="therapistList">  </ul>
+ 
+
+</fieldset>
+</div>
+</form>
+<form id='searchClient'>
+<div id='csearch'>
+	<fieldset>
+				<legend>Search Client</legend>
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>First Name:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input class="txtbox" type="text" id="csearchfirstname" name="csearchfirstname"
+								placeholder="firstname"  maxlength="50" />
+						</div>
+					</div>
+					</div>
+					<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Last Name:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input class="txtbox" type="text" id="csearchlastname" name="csearchlastname"
+								placeholder="lastname"  maxlength="50" />
+						</div>
+					</div>
+					</div>
+					<div class='halfFrame'>
+						<div class='oneThirdFrame'></div>
+					
+					</div>
+					<div class='halfFrame'>
+							<div class='oneThirdFrame'></div>
+						<div class='oneThirdFrame'>
+								<input type="submit" id="but" name="search" value="Search" class='btnSearchClient'/>
+						</div>
+					</div>
+	</fieldset>
+	
+	<fieldset id='searchclient'>
+<legend>Client List</legend>
+
+<table></table><ul id="clientList">  </ul>
+
+ 
+
+</fieldset>
+
+</div>
+</form>
+
+</body>
+</html>

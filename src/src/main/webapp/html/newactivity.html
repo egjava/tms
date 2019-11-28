@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../css/common.css">
+<script type="text/javascript" src="../js/jquery.validate.js"></script>  
+<script type="text/javascript" src="../js/additional-methods.js"></script> 
+<script type="text/javascript" src="../js/validation.js"></script> 
+  <script src="../js/moment.js"></script> 
+ <title>Therapist Management System</title>
+</head>
+<body>
+<div class="formFrame">
+		<form id="newactivity" action="" >
+			  
+			<div class='header'></div>
+			<fieldset id ='successmessage'></fieldset>
+			<fieldset id ='errormessage'></fieldset>
+			<fieldset>
+				<legend>A New Activity</legend>
+					<div class='halfFrame'>
+						<div>
+							<div class='oneThirdFrame'>
+								<label>Client Name :</label>
+							</div>
+							<div class='twoThirdFrame'>
+								<input class="txtbox" type="text" id="cname" name="cname" disabled
+									  />
+							</div>
+						</div>
+						</div>
+						<div class='halfFrame'>
+						<div>
+						<div class='oneThirdFrame'>
+							<label>Activity Type:</label>
+
+						</div>
+						<div class='twoThirdFrame'>
+								<select id="cactivity" name="cactivity">
+									<option value=''>Select Activity Type</option>
+								</select>							
+						</div>
+					</div>
+						</div>
+					<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Date:</label>
+						</div>
+						
+						<div class='oneThirdFrame'>
+							<input type="date" name='actydate' id='actydate'/>
+						</div>
+					</div>
+				</div>
+					 <div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Therapist:</label>
+
+						</div>
+						<div class='twoThirdFrame'>
+							
+							 	<select id='therapistName' name='therapistName'>
+									<option value=''>Select Therapist</option>
+									
+								</select>
+						</div>
+						
+					</div> 
+					</div>
+			
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Rate:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<select id="report" name="rateper">
+								<option value=''>Rate per</option>
+								<option value='Hour'>Hour</option>
+								<option value='Activity'>Activity </option>
+								<option value='Months'>Months</option>
+							<option value='% per year'>% per year</option>
+							</select> <label>Unit:</label>
+							 <input class="smallTxtbox" type="text"
+								id="rateperval" name="rateperval" maxlength="3" />
+						</div>
+					</div>
+				</div>
+				
+					<div class='halfFrame'>
+					<div>	
+						<div class='oneThirdFrame'>
+							<label>Rate $</label> <input class="rateTxtbox" type="text" id="rate"
+								name="rate" placeholder="rate $" required maxlength="50" />
+						</div>
+						<div class='twoThirdFrame'>
+							<label>Waiver $</label>
+							<input class="rateTxtbox" type="text" id="waiver" name="waiver"
+									placeholder="waiver $" maxlength="35" />
+						</div>
+						
+					</div>
+				</div>
+			
+					<div class='halfFrame'>
+					<div>
+						<div class='twoThirdFrame'>
+							<label>Net Charge $</label>
+							<input class="rateTxtbox" type="text" id="netch" name="netch" placeholder="net charge $" disabled/>
+						</div>
+						<div class='oneThirdFrame'>
+							
+						</div>
+					</div>
+				</div>
+						<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Payment:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input class="txtbox" type="text" id="payment" name="payment" />
+						</div>
+					</div>
+				</div>
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							
+						</div>
+						<div class='twoThirdFrame'>
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class='halfFrame'>
+						<div class='oneThirdFrame'>
+							<!-- <div id="successmessage"></div> -->
+						</div>
+						<div class='oneThirdFrame'>
+							<input type="submit" id="but" name="save" value="Save" class='btnSave'/>
+						</div>
+						<!-- <div class='oneThirdFrame'>
+							<input type="button" id="but" name="cancel" value="Cancel" class='btnCancel'/>
+						</div> -->
+					</div>
+			
+				
+					
+			</fieldset>
+			<!-- <div class='bottomFrame'><label><center> For a new rate, enter the $ amount [$ per hour, month or activity].</center></label></div> -->
+		</form>
+		<form id='searchnewactivity' action="">
+			  <fieldset id ='successmessage'></fieldset>
+			<fieldset id ='errormessage'></fieldset>
+<fieldset>
+				<legend>Search</legend>
+					<div class='halfFrame'>
+					<div>
+						 <div class='oneThirdFrame'>
+							<label>Client:</label>
+						</div>
+						<div class='styled-list'>
+								<select id='selectClient' name='selectClient' size=4>
+								</select>
+						</div>
+					</div>
+				</div>
+				<div class='halfFrame'>
+					<div>
+						 <div class='oneThirdFrame'>
+							<label>Activity Type:</label>
+						</div>
+						<div class='twoThirdFrame'>
+								<select id="csearchactivity" name="csearchactivity">
+									<option value=''>Select Activity Type</option>
+								</select>		
+						
+						</div>
+					</div>
+				</div>
+			
+						<div class='halfFrame'>
+					<div>
+						 <div class='oneThirdFrame'>
+							<label>Therapist:</label>
+						</div>
+						<div class='twoThirdFrame'>
+								<select id='searchtherapistName' name='searchtherapistName'>
+									<option value=''>Select Therapist</option>
+								</select>	
+						
+						</div>
+					</div>
+				</div>
+				
+					
+						
+				
+				<div class='halfFrame'>
+					<div>
+						 <div class='oneThirdFrame'>
+							<input type="submit" id="but" name="search" value="Search" class='btnSearch'/>
+						</div>
+						<div class='oneThirdFrame'>
+								<input type="submit" id="but" name="delete" value="Delete" class='btnDelete'/>
+								
+						</div>
+					</div>
+				
+				</div>
+				
+						
+						
+						
+						<div class="halfFrame">
+							<div>
+								<div class="oneThirdFrame">
+								</div>
+								<div class="twoThirdFrame">
+									
+								</div>
+							</div>
+						</div>
+						<div class="halfFrame">
+							<div>
+								<div class="oneThirdFrame">
+								</div>
+								<div class="twoThirdFrame">
+									
+								</div>
+							</div>
+						</div>
+					
+						
+						
+				<div class="halfFrame">
+					<div>
+					<div class="oneThirdFrame">
+					
+					</div>
+						<div class="twoThirdFrame">
+							<ul id="searchNewActTypeList"></ul>
+						</div>
+					</div>
+				</div>
+				</fieldset>
+				</form>
+</div>
+
+</body>
+</html>

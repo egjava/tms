@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="../css/common.css">
+
+<script type="text/javascript" src="../js/jquery.validate.js"></script>  
+<script type="text/javascript" src="../js/additional-methods.js"></script> 
+<script src="../js/validation.js"></script>
+
+ <title>Therapist Management System</title>
+</head>
+<body>
+<div class="formFrame">
+		  <form id='flagSearch' action="">
+		  <fieldset id ='successmessage'></fieldset>
+			<fieldset id ='errormessage'></fieldset>
+		
+		
+			<fieldset id='searchbox'>
+				<legend>Search</legend>
+				
+				<div class='halfFrame'>
+					<div>
+						 <div class='oneThirdFrame'>
+							<label>Flag:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input class="searchtxtbox" type="text" id="flagsearchtext" name="flagsearchtext"
+								placeholder="search flag"  />
+								<!-- <div id='searchmessage'>
+								</div> -->
+						</div>
+						
+					</div>
+				</div>
+				<div class='halfFrame'>
+				</div>
+				<div class='halfFrame'>
+				</div>
+				
+				<!--  <div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Update Flag:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input class="txtbox" type="text" id="flagmodify" name="flagmodify"
+								placeholder="modify flag" disabled />
+						</div>
+						
+						
+					</div>
+				</div> -->
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+						</div>
+						<div class='oneThirdFrame'>
+							<input type="submit" id="but" name="searchflag" value="Search" class='btnSearch'/>
+						</div>
+						<div class='oneThirdFrame'>
+							 <input type="submit" id="but" name="delete" value="Delete" class='btnDelete'/> 
+						</div>
+					</div>
+				</div>
+				<div class='halfFrame'>
+				<div>
+				<div class="oneThirdFrame">
+					
+				</div>
+					<div class="twoThirdFrame">
+							<ul id="flagList"></ul>
+						</div>
+					</div>
+				</div>
+			<!--  	<div class='halfFrame'>
+				<div>
+					<div class='oneThirdFrame'>
+					</div>
+					<div class='oneThirdFrame'>
+								<input type="submit" id="but" name="Modify" value="Modify" class='btnModify'/>
+						</div>
+						<div class='oneThirdFrame'>
+							<input type="submit" id="but" name="delete" value="Delete" class='btnDelete'/>
+						</div>
+				</div>
+				</div>-->
+				</fieldset>
+				</form>
+				<br>
+				<form id="addFlag" action="">
+				<fieldset>
+				<legend>Flag</legend>
+				<div class='halfFrame'>
+					<div>
+					<div class='oneFourthFrame'></div>
+						<div class='oneThirdFrame'>
+							<label>Flag:</label>
+						</div>
+						
+						<div class='oneThirdFrame'>
+								<input class="txtbox" type="text" id="newflag" name="newflag" 
+								placeholder="add new Flag"  maxlength="50" />
+								
+						</div>
+						
+					</div>
+				</div>
+			
+			
+				<div class='twoThirdFrame'></div>
+					
+					
+					<div class='twoThirdFrame'>
+					<div>
+						<div class='oneFourthFrame'>
+							
+						</div>
+						<div class='oneFourthFrame'>
+							
+						</div>
+						<div class='oneFourthFrame'>
+						<input type="submit" id="but" name="addFlag" value="Add" class='btnAdd'/>
+							<!--  <input type="submit" id="but" name="Modify" value="Modify" class='btnModify'/>-->
+						</div>
+						
+					</div>
+				</div>
+				
+	</fieldset>			
+</form>					
+			
+			
+</div>				
+				
+
+
+</body>
+</html>

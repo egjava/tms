@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/common.css">
+<script type="text/javascript" src="../js/jquery.validate.js"></script>  
+<script type="text/javascript" src="../js/additional-methods.js"></script> 
+ <title>Therapist Management System</title>
+</head>
+<body>
+<form id='searchreferral' action="">
+	  <fieldset id ='successmessage'></fieldset>
+			<fieldset id ='errormessage'></fieldset>
+<fieldset class='searchreferral'>
+				<legend>Search</legend>
+				<div class='twothirdFrame'>
+					<div>
+						 <div class='oneFourthFrame'>
+							<label>Referral Source:</label>
+						</div>
+						
+						<div class='oneThirdFrame'>
+							<input class="searchtxtbox" type="text" id="searchrefsource" name="searchrefsource"
+								placeholder="referral source"  maxlength="50" />
+								<!-- <div id='searchmessage'></div> -->
+						</div>
+						<div class='oneFourthFrame'>
+							<input type="submit" id="but" name="search" value="Search"  class='btnSearch'/>
+						</div>
+						<div class='oneFourthFrame'>
+							<input type="submit" id="but" name="delete" value="Delete" class='btnDelete'/>
+						</div>
+					</div>
+				</div>
+				<div class="halfFrame">
+					<div>
+					<div class="oneThirdFrame">				
+					</div>
+						<div class="twoThirdFrame">
+							<ul id="searchReferralList"></ul>
+						</div>
+					</div>
+				</div>
+				</fieldset>
+				</form>
+				<br>
+				<form id=referral action="">
+				<fieldset>
+				<legend>Referral Source</legend>
+				<div class='halfFrame'>
+					<div>
+					<div class='oneFourthFrame'></div>
+						<div class='oneThirdFrame'>
+							<label>Referral Source:</label>
+						</div>
+						<div class='oneThirdFrame'>
+								<input class="txtbox" type="text" id="refsource" name="refsource"
+								placeholder="new referral source"  maxlength="50" />
+						</div>
+					</div>
+				</div>
+			
+			
+				<div class='twoThirdFrame'></div>
+				
+					<div class='twoThirdFrame'>
+					<div>
+						<div class='oneFourthFrame'>
+						</div>
+						<div class='oneFourthFrame'>
+						</div>
+						
+						<!-- <div class='oneFourthFrame'>
+							<input type="button" id="but" name="Modify" value="Modify" class='btnEdit'/>
+						</div> -->
+						<div class='oneFourthFrame'>
+							<input type="submit" id="but" name="add" value="Save" class='btnSave'/>
+						</div>
+						 <div class='oneFourthFrame'>
+							<!--  <input type="button" id="but" name="delete" value="Delete" disabled class='btnDelete'/>-->
+							<!-- <div id=successmessage></div> -->
+						</div>
+					</div>
+				</div>
+				</fieldset>	
+				</form>	
+				
+				
+				
+				
+
+
+</body>
+</html>

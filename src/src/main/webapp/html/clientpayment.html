@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/common.css">
+<!-- <script src="../js/jquery-1.11.2.js" type="text/javascript"></script> -->
+<script type="text/javascript" src="../js/jquery.validate.js"></script>  
+<script type="text/javascript" src="../js/additional-methods.js"></script> 
+ <script src="../js/validation.js"></script> 
+<!-- <script src="../js/dynamic.js"></script> -->
+ <title>Therapist Management System</title>
+</head>
+<body>
+<form id='payments' action="">
+	 
+		<div class="formFrame">
+			<div class='header'></div>
+			 <fieldset id ='successmessage'></fieldset>
+			<fieldset id ='errormessage'></fieldset>
+			<fieldset>
+				<legend>Client Name</legend>
+				
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Activity Type:</label>
+						</div>
+						<div class='twoThirdFrame'>
+								<select id='cactivity' name='cactivity'>
+									<option value=''>Select ActivityType</option>									
+								</select>		
+						</div>
+					</div>
+				</div>
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Therapist:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<select id='therapistName' name='therapistName'>
+									<option value=''>Select Therapist</option>
+									
+								</select>
+						</div>
+					</div>
+				</div>
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Payments:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input class="txtbox" type="text" id="bwpayment" name="bwpayment"
+								placeholder="payments"  maxlength="50" />
+						</div>
+					</div>
+					</div>
+					<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<label>Date:</label>
+						</div>
+						<div class='twoThirdFrame'>
+							<input type="date" name='paydate' id='paydate' />
+						</div>
+					</div>
+				</div>
+				<div class='halfFrame'>
+				</div>
+				<div class='halfFrame'>
+					<div>
+						<div class='oneThirdFrame'>
+							<!-- <div id='successmessage'></div> -->
+						</div>
+						<div class='oneThirdFrame'>
+							<input type="submit" id="but" name="save" value="Save" class='btnSave'/>
+						</div>
+						<div class='oneThirdFrame'>
+							<input type="button" id="but" name="cancel" value="Cancel" class='btnCancel'/>
+						</div>
+					
+					</div>
+				</div>
+					
+</fieldset>
+</div>
+</form>
+
+
+
+
+</body>
+</html>
